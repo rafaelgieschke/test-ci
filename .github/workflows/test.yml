@@ -7,5 +7,5 @@ jobs:
       - uses: actions/checkout@v2
       - run: ls -la
       - run: echo a > a
-      - run: git add a; GIT_AUTHOR_NAME=bot GIT_AUTHOR_EMAIL=bot@invalid.invalid git commit -m x
+      - run: git add a; EMAIL=bot@invalid.invalid git commit -m x
       - run: git push
