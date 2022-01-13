@@ -4,6 +4,7 @@ jobs:
   check-bats-version:
     steps:
       - uses: actions/checkout@v2
+      - run: cat /proc/cpuinfo
       - run: ls -la
       - run: echo a > a
       - run: git add a; git config --global user.name "Bot"; EMAIL=bot@invalid.invalid git commit -m x
