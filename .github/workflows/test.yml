@@ -4,6 +4,8 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - run: ps aux
+      - run: echo "$0"
       - uses: actions/checkout@v2
       - run: df -h
       - run: cat /proc/cpuinfo
