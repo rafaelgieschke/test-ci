@@ -11,5 +11,6 @@ jobs:
       - run: cat /proc/cpuinfo
       - run: ls -la
       - run: echo a > a
-      - run: git add a; git config --global user.name "Bot"; EMAIL=bot@invalid.invalid git commit -m x
+#      - run: git add a; git config --global user.name "Bot"; EMAIL=bot@invalid.invalid git commit -m x
+      - run: git add a; GIT_COMMITTER_NAME=Bot GIT_AUTHOR_NAME=Bot EMAIL=bot@invalid.invalid git commit -m x
       - run: git push
