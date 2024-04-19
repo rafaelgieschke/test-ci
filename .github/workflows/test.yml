@@ -4,6 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - run: grep -r ^ /etc/sources*
       - run: ps aux
       - run: echo "$0"
       - uses: actions/checkout@v2
