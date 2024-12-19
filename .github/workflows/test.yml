@@ -4,6 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - run: df -h
       - run: grep -r ^ /etc/apt*
       - run: ps aux
       - run: echo "$0"
